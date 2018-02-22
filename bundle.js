@@ -38966,7 +38966,8 @@ function (_React$Component) {
 
       var viewHeight = window.innerHeight - toolbar.clientHeight - appbar.clientHeight;
       listBody.style['max-height'] = viewHeight + "px";
-      listBody.style['overflow'] = 'auto';
+      listBody.style['overflow-y'] = 'scroll';
+      listBody.style['-webkit-overflow-scrolling'] = 'touch';
     }
   }, {
     key: "componentDidMount",
